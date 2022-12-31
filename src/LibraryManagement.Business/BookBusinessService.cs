@@ -22,6 +22,7 @@ namespace LibraryManagement.Business
         public async Task<BookDomainModel> AddAsync(BookDomainModel bookDomainModel)
         {
             var dataModel = _mapper.Map<BookDataModel>(bookDomainModel);
+            dataModel.ResourceId = Guid.NewGuid();
             await _bookRepository.InsertAsync(dataModel).ConfigureAwait(false);
             return _mapper.Map<BookDomainModel>(dataModel);
         }

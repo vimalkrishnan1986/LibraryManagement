@@ -15,8 +15,4 @@
     <ProjectReference Include="..\LibraryManagement.Domain.Models\LibraryManagement.Domain.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Profile\" />
-  </ItemGroup>
-
 </Project>

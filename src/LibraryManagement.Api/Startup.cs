@@ -4,6 +4,7 @@ using LibraryManagement.Business.Contracts;
 using LibraryManagement.Data;
 using LibraryManagement.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace LibraryManagement.Api
 {
@@ -29,7 +30,7 @@ namespace LibraryManagement.Api
             services.AddScoped<DbContext>(c => new LibraryDbContext(Configuration
                 .GetValue<string>("DataBase:ConnectionString")));
             services.AddScoped<IBookBusinessService, BookBusinessService>();
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddRazorPages();
             services.AddSwaggerGen();

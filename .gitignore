@@ -3,3 +3,14 @@
 ################################################################################
 
 /src/.vs/LibraryManagement/DesignTimeBuild
+/src/.vs/LibraryManagement/v17
+/src/LibraryManagement.Api/bin/Debug/net6.0
+/src/LibraryManagement.Api/obj
+/src/LibraryManagement.Business/bin/Debug/net6.0
+/src/LibraryManagement.Business/obj
+/src/LibraryManagement.Common/bin/Debug/net6.0
+/src/LibraryManagement.Common/obj
+/src/LibraryManagement.Data/bin/Debug/net6.0
+/src/LibraryManagement.Data/obj
+/src/obj/Docker
+/src/LibraryManagement.Api/Properties/launchSettings.json

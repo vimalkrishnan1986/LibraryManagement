@@ -14,3 +14,6 @@
 /src/LibraryManagement.Data/obj
 /src/obj/Docker
 /src/LibraryManagement.Api/Properties/launchSettings.json
+/src/LibraryManagement.Domain.Models/bin/Debug/net6.0
+/src/LibraryManagement.Domain.Models/obj/Debug/net6.0
+/src/LibraryManagement.Domain.Models/obj

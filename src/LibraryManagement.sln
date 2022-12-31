@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Data", "LibraryManagement.Data\LibraryManagement.Data.csproj", "{A391D748-6999-4FB4-AF4E-11084D95534C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Data", "LibraryManagement.Data\LibraryManagement.Data.csproj", "{A391D748-6999-4FB4-AF4E-11084D95534C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Business", "LibraryManagement.Business\LibraryManagement.Business.csproj", "{AFAD30B9-A1BA-4B1F-8000-46A834A5BF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Business", "LibraryManagement.Business\LibraryManagement.Business.csproj", "{AFAD30B9-A1BA-4B1F-8000-46A834A5BF54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Common", "LibraryManagement.Common\LibraryManagement.Common.csproj", "{B4622447-847F-4276-B784-4ACD47AF2689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Common", "LibraryManagement.Common\LibraryManagement.Common.csproj", "{B4622447-847F-4276-B784-4ACD47AF2689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Api", "LibraryManagement.Api\LibraryManagement.Api.csproj", "{C25CBEE9-7A84-4148-A564-F2A8EC5D7580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Api", "LibraryManagement.Api\LibraryManagement.Api.csproj", "{C25CBEE9-7A84-4148-A564-F2A8EC5D7580}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{177F3D9F-47D0-48C8-8AA2-F0B097628439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Domain.Models", "LibraryManagement.Domain.Models\LibraryManagement.Domain.Models.csproj", "{86216C58-28BE-4FDF-BFD7-BB413D3C051D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,9 +38,12 @@ Global
 		{C25CBEE9-7A84-4148-A564-F2A8EC5D7580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25CBEE9-7A84-4148-A564-F2A8EC5D7580}.Release|Any CPU.Build.0 = Release|Any CPU
 		{177F3D9F-47D0-48C8-8AA2-F0B097628439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{177F3D9F-47D0-48C8-8AA2-F0B097628439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177F3D9F-47D0-48C8-8AA2-F0B097628439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177F3D9F-47D0-48C8-8AA2-F0B097628439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

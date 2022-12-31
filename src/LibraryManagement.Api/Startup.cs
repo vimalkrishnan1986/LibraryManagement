@@ -1,7 +1,9 @@
 
 using LibraryManagement.Business;
 using LibraryManagement.Business.Contracts;
+using LibraryManagement.Data;
 using LibraryManagement.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagement.Api
 {
@@ -24,7 +26,8 @@ namespace LibraryManagement.Api
 
             services.AddSingleton(c => logger);
             services.AddScoped(typeof(IRepository<>), typeof(DataRepository<>));
-
+            services.AddScoped<DbContext>(c => new LibraryDbContext(Configuration
+                .GetValue<string>("DataBase:ConnectionString")));
             services.AddScoped<IBookBusinessService, BookBusinessService>();
 
             services.AddControllers();
@@ -34,7 +37,7 @@ namespace LibraryManagement.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger logger)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger logger, DbContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -47,6 +50,14 @@ namespace LibraryManagement.Api
                 app.UseHsts();
             }
 
+            try
+            {
+                dbContext.Database.Migrate();
+            }
+            catch (Exception ex) when (ex != null)
+            {
+                logger.LogError(ex.Message);
+            }
             app.UseHttpsRedirection();
 
             app.UseRouting();

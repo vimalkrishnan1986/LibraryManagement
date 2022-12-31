@@ -11,7 +11,7 @@ namespace LibraryManagement.Data
         public LibraryDbContext()
         {
             // To add connections tring for test
-            _connectionString = "";
+            _connectionString = "data source=LAPTOP-AOP88UU4\\SQLEXPRESS;initial catalog=LibraryDB;User ID=sa;Password=sa123;multipleactiveresultsets=True;";
         }
         public LibraryDbContext(string connectionString)
         {

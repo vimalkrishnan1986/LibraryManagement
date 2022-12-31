@@ -25,12 +25,14 @@ namespace LibraryManagement.Data
         {
             modelBuilder.Entity<BookDataModel>(t =>
             {
+                t.ToTable("Books", DbConstants.DbSchema);
                 t.HasKey(m => m.Id);
                 t.Property(m => m.ResourceId).IsRequired(true);
-                t.Property(m => m.Id).UseSqlServerIdentityColumn();
+                t.Property(m => m.Id).UseIdentityColumn();
                 t.Property(m => m.Name).IsRequired(true).HasMaxLength(50);
                 t.Property(m => m.AuthorName).IsRequired(true).HasMaxLength(50);
             });
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

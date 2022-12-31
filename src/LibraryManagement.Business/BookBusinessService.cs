@@ -39,8 +39,8 @@ namespace LibraryManagement.Business
 
         public async Task<BookDomainModel> GetByIdAsync(Guid resourceId)
         {
-            var model = await _bookRepository
-                .GetByFilterAsync(m => m.ResourceId == resourceId).ConfigureAwait(false);
+            var model = (await _bookRepository
+                .GetByFilterAsync(m => m.ResourceId == resourceId).ConfigureAwait(false)).FirstOrDefault();
             if (model == null)
             {
                 throw new ArgumentException("Invalid resourceId");

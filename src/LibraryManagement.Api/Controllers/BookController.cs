@@ -20,6 +20,10 @@ namespace LibraryManagement.Api.Controllers
         [Route("")]
         public async Task<IActionResult> AddAsync([FromBody, Required] BookDomainModel bookDomainModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             return Accepted(await _businessService
                 .AddAsync(bookDomainModel).ConfigureAwait(false));
         }

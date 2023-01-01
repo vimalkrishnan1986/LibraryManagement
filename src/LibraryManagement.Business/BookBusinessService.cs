@@ -26,7 +26,7 @@ namespace LibraryManagement.Business
                 throw new ArgumentException(nameof(bookDomainModel));
             }
             var dataModel = _mapper.Map<BookDataModel>(bookDomainModel);
-            dataModel.ResourceId = Guid.NewGuid();
+            dataModel.ResourceId = bookDomainModel.ResourceId ?? Guid.NewGuid();
             await _bookRepository.InsertAsync(dataModel).ConfigureAwait(false);
             return _mapper.Map<BookDomainModel>(dataModel);
         }

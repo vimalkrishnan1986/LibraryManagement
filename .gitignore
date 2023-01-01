@@ -18,3 +18,5 @@
 /src/LibraryManagement.Domain.Models/obj/Debug/net6.0
 /src/LibraryManagement.Domain.Models/obj
 /src/.vs/LibraryManagement
+/Tests/LibraryManagement.Tests/bin/Debug/net6.0
+/Tests/LibraryManagement.Tests/obj

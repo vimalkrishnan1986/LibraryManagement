@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Api", "Li
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{177F3D9F-47D0-48C8-8AA2-F0B097628439}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Domain.Models", "LibraryManagement.Domain.Models\LibraryManagement.Domain.Models.csproj", "{86216C58-28BE-4FDF-BFD7-BB413D3C051D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagement.Domain.Models", "LibraryManagement.Domain.Models\LibraryManagement.Domain.Models.csproj", "{86216C58-28BE-4FDF-BFD7-BB413D3C051D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagement.Tests", "..\Tests\LibraryManagement.Tests\LibraryManagement.Tests.csproj", "{7E932A85-F805-4EFA-8246-CCAD931FFDD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86216C58-28BE-4FDF-BFD7-BB413D3C051D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E932A85-F805-4EFA-8246-CCAD931FFDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E932A85-F805-4EFA-8246-CCAD931FFDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E932A85-F805-4EFA-8246-CCAD931FFDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E932A85-F805-4EFA-8246-CCAD931FFDD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
